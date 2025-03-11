@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanBan Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1>Action Lists</h1>
+    </div>
+
+    <div class="container columns">
+        <div class="column">
+            <div class="column-title">
+                <h3 data-tasks="0">To Do</h3>
+                <button  data-add><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="tasks">
+                <!-- <div class="task" draggable="true">
+                    <div>Hellooooo im gona smash your boy</div>
+                    <menu>
+                        <button data-edit><i class="fa-solid fa-pen"></i></button>
+                        <button data-delete><i class="fa-solid fa-trash"></i></button>
+                    </menu>
+                </div>
+                <div class="task" draggable="true">
+                    <div>Hellooooo im gona smash your boy</div>
+                    <menu>
+                        <button data-edit><i class="fa-solid fa-pen"></i></button>
+                        <button data-delete><i class="fa-solid fa-trash"></i></button>
+                    </menu>
+                </div>
+                <div class="task dragging" draggable="true">
+                    <div>Hellooooo im gona smash your boy</div>
+                    <menu>
+                        <button data-edit><i class="fa-solid fa-pen"></i></button>
+                        <button data-delete><i class="fa-solid fa-trash"></i></button>
+                    </menu>
+                </div> -->
+                <!-- <div class="task-input" contenteditable="true" data-placeholder="Task Name"></div> -->
+            </div>
+        </div>
+ 
+
+   
+        <div class="column">
+            <div class="column-title">
+                <h3 data-tasks="0">In Progress</h3>
+                <button  data-add><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="tasks">
+                
+            </div>
+        </div>
+   
+
+    
+        <div class="column">
+            <div class="column-title">
+                <h3 data-tasks="0">Done</h3>
+                <button  data-add><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="tasks"></div>
+        </div>
+ 
+
+    </div>
+    <dialog class="confirm-modal">
+        <form method="dialog">
+          <h3>Delete Task?</h3>
+          <p>You are about to delete a task</p>
+          <div class="preview"></div>
+  
+          <menu>
+            <button type="button" id="cancel">Cancel</button>
+            <button type="submit" id="confirm">Yes, delete it.</button>
+          </menu>
+        </form>
+      </dialog>
+    <script src="app.js"></script>
+</body>
+</html>
